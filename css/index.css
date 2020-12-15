@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:black;
+}
+#reset-button{
+    position:relative;
+    margin-top:2%;
+    left:50%;
+    transform: translate(-50%);
+    margin-bottom:10px;
+    font-size:30px;
+    padding:10px 20px;
+    border-radius:10px;
+}
+.header-text{
+    text-align:center;
+    color:white;
+}
+#answer-container{
+    width:100vw;
+    height:20vh;
+    position:relative;
+   
+}
+#line{
+    width:100vw;
+    height:5px;
+    background:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#answer{
+    background:black;
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius:50%;
+    border:5px solid white;
+}
+#answer-value{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:50px;
+    color:white;
+}
+#board-container{
+    width:90%;
+    height:500px;
+    background:black;
+    border:5px white solid;
+    position:relative;
+    left:50%;
+    transform: translate(-50%);
+    display:flex;
+    flex-wrap: wrap;
+}
+#guess-container{
+    width:50%;
+    height:100%;
+}
+#result-container{
+    width:50%;
+    height:100%;
+}
+#guess-input-container{
+    width:80%;
+    height:80%;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:grid;
+    grid-template-rows: 50% 50%;
+}
+#guess{
+    grid-row-start:1;
+    grid-row-end: 2;
+    width:50%;
+    height:30%;
+    font-size:50px;
+    text-align:center;
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+#check-answer-button{
+    grid-row-start:2;
+    grid-row-end: 3;
+    width:70%;
+    height:50%;
+    font-size:30px;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+#result-container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color:white;
+}
+#result-container div{
+   text-align:center;
+   width:100%;
+}
+
+@media only screen and (max-width: 700px) {
+    #guess-container{
+        width:100%;
+        height:50%;
+    }
+    #result-container{
+        width:100%;
+        height:50%;
+    }
+    #guess{
+        grid-row-start:1;
+        grid-row-end: 2;
+        width:50%;
+        height:50%;
+        font-size:50px;
+        text-align:center;
+        position:absolute;
+        top:30%;
+        left:50%;
+        transform: translate(-50%);
+        border-radius: 10px;
+    }
+    #check-answer-button{
+       
+        width:70%;
+        height:70%;
+        font-size:30px;
+        position:absolute;
+        top:0;
+        left:50%;
+        transform: translate(-50%);
+        border-radius: 10px;
+    }
+}
